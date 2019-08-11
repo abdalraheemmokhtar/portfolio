@@ -1,0 +1,14 @@
+{
+  "name": "my-portifilo",
+  "version": "1.0.0",
+  "description": "responsive portofolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "author": "Raheem",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
