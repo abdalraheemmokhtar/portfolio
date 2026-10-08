@@ -4,6 +4,7 @@ A focused portfolio for AI product engineering, data, full-stack systems, and in
 
 ## Featured projects
 
+- [Astra French](https://github.com/abdalraheemmokhtar/astra-french) — adaptive French-learning product with persistent learner modelling and structured tutoring.
 - [SchoolOfMath](https://github.com/abdalraheemmokhtar/SchoolOfMath) — mathematics learning platform with curriculum, assessment, mastery, and guided tutoring.
 - [Server Realms](https://github.com/abdalraheemmokhtar/Server_realms) — original browser roguelite with optional WebSocket co-op.
 - [Podcast Helper](https://github.com/abdalraheemmokhtar/Podcast-helper-with-OpenAI) — AI-assisted podcast summarization workflow.
