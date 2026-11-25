@@ -3,75 +3,454 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio of Abdalraheem Mokhtar — data science, machine learning, and web development.">
-  <title>Abdalraheem Mokhtar — Data & AI Builder</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <!--
+    Easy to change
+    --------------
+    Display name: Abdalraheem Mokhtar
+    Public email: abdalraheemmokhtar@gmail.com
+    LinkedIn: https://www.linkedin.com/in/abdalraheem-mokhtar
+    GitHub: https://github.com/abdalraheemmokhtar
+    Location shown: Abu Dhabi, UAE (Khartoum appears only as the MTN Sudan work location)
+    No headshot. No CGPA. No Arabic name line. No immigration or visa wording.
+    DGE: title and dates only. No bullets.
+    Zain Data Science Team Leader end date is omitted. The CV says June 2026, which overlaps the DGE start in March 2026. To show it, change that role's date to "Jul 2025 – Jun 2026".
+    Astra is a private beta. Do not link the private astra-french repo or a sign-in URL.
+    arabic-llm-eval is shown with no repository link (the public URL 404s).
+    Omitted until confirmed, so they are not on the page:
+      - ElevenLabs and Cloudflare by name (Workers, D1, R2). Restore the stack sentence:
+        "TypeScript on Cloudflare Workers, with D1 (database) and R2 (storage). An LLM tutor runs through an OpenAI-compatible API, ElevenLabs handles voice (TTS and transcription), and the radar is a plain SVG chart."
+        Also restore "Cloudflare Workers / D1 / R2" on the data-and-engineering skill line.
+      - Question and audio counts (470 practice questions, 347 recorded clips).
+      - Astra role wording "shipped it with AI coding agents (Codex, then Cursor cloud agents), reviewing and merging their pull requests."
+      - Qwen2-0.5B illustrative findings, until native review of the Gulf and Sudanese items. Do not present those numbers as a benchmark.
+      - School of Math (https://github.com/abdalraheemmokhtar/SchoolOfMath). Confirm inclusion and his role. Do not quote the homepage's demo testimonials.
+      - Server Realms. Its repository returns 404.
+      - Power BI.
+      - Cloud skills AWS, Azure, GCP, until specific services are confirmed.
+      - A current French level (CEFR). The page says "learning" only, plus "targeting TCF Canada" on the skills line.
+      - Graduation year, and issuers for the three 2022 certificates.
+      - TCF Canada as personal motivation in About. Astra still describes the exam, because that is the product.
+  -->
+  <title>Abdalraheem Mokhtar | Applied AI &amp; Data Builder</title>
+  <meta name="description" content="Applied AI and data builder in Abu Dhabi. LLM apps, evaluation and ML products for everyone, English speakers included. Telecom, mobility and government work.">
+  <link rel="canonical" href="https://abdalraheemmokhtar.github.io/portfolio/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Abdalraheem Mokhtar">
+  <meta property="og:url" content="https://abdalraheemmokhtar.github.io/portfolio/">
+  <meta property="og:title" content="Abdalraheem Mokhtar | Applied AI &amp; Data Builder">
+  <meta property="og:description" content="Applied AI and data builder in Abu Dhabi. LLM apps, evaluation and ML products for everyone, English speakers included. Telecom, mobility and government work.">
+  <meta property="og:image" content="https://abdalraheemmokhtar.github.io/portfolio/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Abdalraheem Mokhtar, applied AI and data builder. LLM apps, evaluation and ML products. Abu Dhabi, UAE.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abdalraheem Mokhtar | Applied AI &amp; Data Builder">
+  <meta name="twitter:description" content="Applied AI and data builder in Abu Dhabi. LLM apps, evaluation and ML products for everyone, English speakers included. Telecom, mobility and government work.">
+  <meta name="twitter:image" content="https://abdalraheemmokhtar.github.io/portfolio/assets/og.png">
+  <meta name="twitter:image:alt" content="Abdalraheem Mokhtar, applied AI and data builder. LLM apps, evaluation and ML products. Abu Dhabi, UAE.">
+  <meta name="theme-color" content="#f3f0e7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#131513" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="me" href="https://github.com/abdalraheemmokhtar">
+  <link rel="me" href="https://www.linkedin.com/in/abdalraheem-mokhtar">
+  <link rel="preload" href="assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/source-sans-3.woff2" as="font" type="font/woff2" crossorigin>
+  <script>
+    (function () {
+      document.documentElement.classList.add("js");
+      try {
+        var theme = localStorage.getItem("theme");
+        if (theme === "light" || theme === "dark") {
+          document.documentElement.setAttribute("data-theme", theme);
+        }
+      } catch (err) {}
+    })();
+  </script>
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abdalraheem Mokhtar",
+    "jobTitle": "Business Analyst, BI & Advanced Analytics",
+    "url": "https://abdalraheemmokhtar.github.io/portfolio/",
+    "email": "mailto:abdalraheemmokhtar@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Abu Dhabi",
+      "addressCountry": "AE"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Department of Government Enablement"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Khartoum"
+    },
+    "sameAs": [
+      "https://github.com/abdalraheemmokhtar",
+      "https://www.linkedin.com/in/abdalraheem-mokhtar"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <header class="nav shell">
-    <a class="brand" href="#top" aria-label="Abdalraheem home"><span>AM</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a class="nav-cta" href="mailto:abdalraheemmokhtar@gmail.com">Let’s talk <span>↗</span></a>
-    </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="header-inner shell">
+      <a class="brand" href="#top">Abdalraheem Mokhtar</a>
+      <nav aria-label="Sections">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false">
+        <span class="when-light">Dark mode</span>
+        <span class="when-dark">Light mode</span>
+      </button>
+    </div>
   </header>
 
-  <main id="top">
-    <section class="hero shell">
-      <div class="hero-copy">
-        <p class="eyebrow"><i></i> Available for interesting problems</p>
-        <h1>I build useful things with <em>data</em> and AI.</h1>
-        <p class="lede">I’m Abdalraheem Mokhtar, a developer exploring data science, machine learning, and web products from Abu Dhabi.</p>
-        <div class="actions">
-          <a class="button primary" href="#work">Explore my work <span>↓</span></a>
-          <a class="button secondary" href="https://github.com/abdalraheemmokhtar" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+  <main id="main">
+    <section class="hero shell" aria-labelledby="page-title">
+      <h1 id="page-title">Abdalraheem Mokhtar</h1>
+      <p class="headline">Applied AI &amp; data builder: LLM apps, evaluation and ML products.</p>
+      <hr class="rule">
+      <p class="lede measure">I led a data science team at Zain Sudan and shipped real-time pricing and matching models at a ride-hailing platform. Today I'm a Business Analyst in BI &amp; Advanced Analytics with the Abu Dhabi government, and I build applied AI and data products for everyone, English speakers included, among them Astra, a French exam tutor, and a toolkit for testing how well LLMs handle Arabic dialects.</p>
+      <ul class="chips">
+        <li>Abu Dhabi, UAE</li>
+        <li>Arabic (native)</li>
+        <li>English (professional)</li>
+        <li>French (learning)</li>
+      </ul>
+      <div class="actions">
+        <a class="button primary" href="#projects">See my work</a>
+        <a class="button secondary" href="#contact">Contact</a>
+        <a class="button secondary" href="https://github.com/abdalraheemmokhtar" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+      </div>
+    </section>
+
+    <section class="block shell" id="about" aria-labelledby="about-title">
+      <p class="index" aria-hidden="true">01</p>
+      <div>
+        <h2 id="about-title">About</h2>
+        <p class="measure">I work where data, AI and real users meet. At GO Digital Services, a ride-hailing platform, I built the models behind rider–driver matching, ETA and dynamic pricing, and I ran the A/B tests that decided what shipped. At Zain Sudan I went from data scientist to leading a team of data scientists, BI analysts and engineers. We built segmentation, forecasting, an offer-recommendation system and an LLM-based SQL agent that let business users ask questions in plain language. I now work as a Business Analyst in BI &amp; Advanced Analytics with the Abu Dhabi government. On my own time I build applied AI and data products for everyone, English speakers included. Arabic, my native language, English, and French, which I'm learning, are part of my range, not a definition of the audience.</p>
+      </div>
+    </section>
+
+    <section class="block shell" id="experience" aria-labelledby="experience-title">
+      <p class="index" aria-hidden="true">02</p>
+      <div>
+        <h2 id="experience-title">Experience</h2>
+        <ol class="timeline">
+          <li class="role">
+            <h3>Business Analyst, BI &amp; Advanced Analytics</h3>
+            <p class="where">Department of Government Enablement (DGE), Abu Dhabi · <span class="dates"><time datetime="2026-03">Mar 2026</time> – present</span></p>
+          </li>
+          <li class="role">
+            <h3>Data Science Team Leader</h3>
+            <!-- End date omitted on purpose. CV says June 2026, which overlaps DGE (Mar 2026 – present). Replace the date below with "Jul 2025 – Jun 2026" once confirmed. -->
+            <p class="where">Zain Sudan (telecom operator) · <span class="dates"><time datetime="2025-07">Jul 2025</time></span></p>
+            <ul>
+              <li>Led a team of data scientists, BI analysts and engineers and owned the full ML lifecycle (design, build, deployment, maintenance) for production models in customer segmentation, revenue forecasting and network optimization.</li>
+              <li>Architected and deployed a recommendation system for upselling strategic offers, which fed targeted customer-value-management campaigns.</li>
+              <li>Built generative AI applications, RAG pipelines and agentic workflows. One was an LLM-based SQL agent that let business users query databases in natural language.</li>
+              <li>Put models into production with MLOps practices and CI/CD through Gitea.</li>
+              <li>Mentored the team and reported model performance and business impact to senior leadership.</li>
+            </ul>
+          </li>
+          <li class="role">
+            <h3>Data Scientist</h3>
+            <p class="where">Zain Sudan · <span class="dates"><time datetime="2024-07">Jul 2024</time> – <time datetime="2025-06">Jun 2025</time></span></p>
+            <ul>
+              <li>Assessed data science use cases for technical feasibility and business value, then took the selected ones from proof of concept to full products.</li>
+              <li>Built ML-driven customer segmentation for customer migration and CVM.</li>
+              <li>Ran data science knowledge-sharing sessions across the analytics team.</li>
+            </ul>
+          </li>
+          <li class="role">
+            <h3>Data Science Executive</h3>
+            <p class="where">GO Digital Services (ride-hailing and mobility platform) · <span class="dates"><time datetime="2022-08">Aug 2022</time> – <time datetime="2024-07">Jul 2024</time></span></p>
+            <ul>
+              <li>Architected and deployed production models for real-time rider–driver matching, ETA prediction and dynamic pricing, the latency-sensitive decisions at the core of the live platform.</li>
+              <li>Designed and ran A/B tests on product features, pricing and promotions, and quantified ROI for stakeholders.</li>
+              <li>Built churn models for riders and drivers. The data-driven growth campaigns that followed increased the active user base by 10%.</li>
+              <li>Optimized driver routing and fleet allocation with predictive analytics and geospatial modeling.</li>
+              <li>Introduced new KPIs and dashboards for newly launched service products.</li>
+            </ul>
+          </li>
+          <li class="role">
+            <h3>Data Analyst</h3>
+            <p class="where">MTN Sudan, Khartoum · <span class="dates"><time datetime="2020-12">Dec 2020</time> – <time datetime="2022-08">Aug 2022</time></span></p>
+            <ul>
+              <li>Provided actionable insights for strategic decision-making.</li>
+              <li>Built reports, visualizations and dashboards for stakeholders.</li>
+              <li>Worked with cross-functional teams to find areas for improvement.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="block shell" id="projects" aria-labelledby="projects-title">
+      <p class="index" aria-hidden="true">03</p>
+      <div>
+        <h2 id="projects-title">Projects</h2>
+
+        <article class="project">
+          <p class="status">Private beta</p>
+          <h3>Astra: AI tutor for the TCF Canada French exam</h3>
+          <p class="lede measure">An AI French tutor focused on the TCF Canada exam. It gives feedback on writing and speaking, includes listening and reading practice, and tracks progress by skill.</p>
+          <h4>Problem</h4>
+          <p class="measure">Most French apps are good at streaks and vocabulary but weak at graded writing and speaking, which is where TCF Canada candidates need the most help. I'm preparing for the same exam, so I built the tool I wanted.</p>
+          <h4>What it does</h4>
+          <ul>
+            <li><strong>AI tutor and feedback loop.</strong> Every answer gets checked and comes back as "your answer vs a better answer", with an explanation. The mistakes you make go into a My Mistakes list for review.</li>
+            <li><strong>Voice.</strong> Listening lab and dictation with recorded French audio, plus speaking turns in a conversation mode (text-to-speech and speech-to-text).</li>
+            <li><strong>Skills radar.</strong> A six-axis chart covering Listening, Reading, Writing, Speaking, Grammar and Vocabulary. It shows your current score next to your level 30 days ago. Skills with no data show "Not enough data yet" instead of a fake zero, and every score is labelled as practice evidence, not an official TCF or NCLC result.</li>
+            <li><strong>Practice areas:</strong> TCF Practice hub, Grammar Lab, Listening Lab, Vocabulary, Everyday French, and Content Studio, which turns your own material into practice.</li>
+            <li><strong>French-accuracy rules built into the AI prompts.</strong> For example, the tutor never teaches "-e = feminine" (rouge, jeune), treats the passé composé as être or avoir, and accepts Quebec forms like "au gym".</li>
+          </ul>
+          <h4>Stack</h4>
+          <!-- Vendor names omitted until confirmed. Restore: "TypeScript on Cloudflare Workers, with D1 (database) and R2 (storage). An LLM tutor runs through an OpenAI-compatible API, ElevenLabs handles voice (TTS and transcription), and the radar is a plain SVG chart." -->
+          <p class="measure">TypeScript, with a database and object storage. An LLM tutor runs through an OpenAI-compatible API, voice is text-to-speech and transcription, and the radar is a plain SVG chart.</p>
+          <h4>My role</h4>
+          <!-- Omitted until confirmed: "and shipped it with AI coding agents (Codex, then Cursor cloud agents), reviewing and merging their pull requests." -->
+          <p class="measure">Product owner and builder. I designed the product, wrote the specs and acceptance criteria, and ran an honest critical review of my own app (October 2026). Recent merged work includes a trust pass on AI feedback (grammar rules in the prompts, clean feedback text, consistent progress stats, accurate mistake logging) and the skills radar.</p>
+          <h4>Status</h4>
+          <p class="measure">Working app in private beta. Sign-in is required and the code repo is private. Next up are TCF-format writing tasks with an estimated NCLC score, a speaking mock exam, and a public landing page with a waitlist. No users or revenue are claimed.</p>
+
+          <figure class="shots">
+            <div class="shot-grid">
+              <picture class="wide">
+                <source srcset="assets/astra-oct2026-01-overview.webp" type="image/webp">
+                <img src="assets/astra-oct2026-01-overview.png" width="1024" height="594" alt="Astra overview in the October 2026 build: a daily French mission, practice areas in a sidebar, and a progress panel." loading="lazy" decoding="async">
+              </picture>
+              <picture>
+                <source srcset="assets/astra-oct2026-09-tcf-hub.webp" type="image/webp">
+                <img src="assets/astra-oct2026-09-tcf-hub.png" width="1024" height="594" alt="Astra TCF Practice hub with vocabulary and grammar, reading comprehension, and written expression." loading="lazy" decoding="async">
+              </picture>
+              <picture>
+                <source srcset="assets/astra-oct2026-18-grammar-lab.webp" type="image/webp">
+                <img src="assets/astra-oct2026-18-grammar-lab.png" width="1024" height="594" alt="Astra Grammar Lab showing a colour-coded French sentence and grammar concept cards." loading="lazy" decoding="async">
+              </picture>
+              <picture>
+                <source srcset="assets/astra-oct2026-21-listening-lab.webp" type="image/webp">
+                <img src="assets/astra-oct2026-21-listening-lab.png" width="1024" height="594" alt="Astra Listening Lab with a French passage, audio controls, and read-aloud practice." loading="lazy" decoding="async">
+              </picture>
+              <picture>
+                <source srcset="assets/astra-oct2026-25-content-studio.webp" type="image/webp">
+                <img src="assets/astra-oct2026-25-content-studio.png" width="1024" height="594" alt="Astra Content Studio, which turns a learner's own notes into French recall practice." loading="lazy" decoding="async">
+              </picture>
+              <picture class="wide">
+                <source srcset="assets/astra-oct2026-32-conversation-speak-turn.webp" type="image/webp">
+                <img src="assets/astra-oct2026-32-conversation-speak-turn.png" width="1024" height="594" alt="Astra conversation practice asking the learner to say a sentence in French, with an option to record an answer." loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <figcaption>Astra, October 2026 build</figcaption>
+          </figure>
+
+          <figure class="radar">
+            <figcaption>Skills radar (sample data)</figcaption>
+            <div class="radar-grid">
+              <picture class="wide">
+                <source srcset="assets/skill-radar-light.webp" type="image/webp">
+                <img src="assets/skill-radar-light.png" width="1600" height="858" alt="Skills radar on a light background, using sample data: a six-axis chart for Listening, Reading, Writing, Speaking, Grammar and Vocabulary, beside a score table." loading="lazy" decoding="async">
+              </picture>
+              <picture>
+                <source srcset="assets/skill-radar-gap.webp" type="image/webp">
+                <img src="assets/skill-radar-gap.png" width="1600" height="858" alt="Skills radar using sample data, with Listening and Vocabulary marked Not enough data yet instead of a zero." loading="lazy" decoding="async">
+              </picture>
+              <picture>
+                <source srcset="assets/skill-radar-dark.webp" type="image/webp">
+                <img src="assets/skill-radar-dark.png" width="1600" height="858" alt="The skills radar in a dark theme, using sample data." loading="lazy" decoding="async">
+              </picture>
+              <picture class="phone wide">
+                <source srcset="assets/skill-radar-mobile.webp" type="image/webp">
+                <img src="assets/skill-radar-mobile.png" width="860" height="1901" alt="Skills radar on a narrow mobile layout, using sample data." loading="lazy" decoding="async">
+              </picture>
+            </div>
+          </figure>
+        </article>
+
+        <article class="project" id="arabic-llm-eval">
+          <p class="status">Private repository</p>
+          <h3>arabic-llm-eval: Arabic dialect evaluation toolkit for LLMs</h3>
+          <p class="lede measure">A Python toolkit that tests how well LLMs handle Modern Standard Arabic and Gulf, Egyptian and Sudanese dialects, with honest, small-sample reporting.</p>
+          <h4>Why</h4>
+          <p class="measure">Arabic LLM quality is usually reported on MSA. Real users in the Gulf and Sudan write in dialect and complain to telcos in dialect. I wanted a repeatable way to see where models break.</p>
+          <h4>What it does</h4>
+          <ul>
+            <li>A CLI and Python API that run against any OpenAI-compatible endpoint or a Hugging Face model.</li>
+            <li>Ten task suites: dialect understanding, dialect classification, Arabic→English and English→Arabic translation, telco-complaint sentiment, sentiment with reasoning, Arabic factual QA, GCC knowledge, safety refusals, and content moderation.</li>
+            <li>Metrics: exact match with Arabic normalization (diacritics, alef/yaa variants), chrF/BLEU, LLM-as-judge with a rubric, and a dialect-robustness score.</li>
+            <li>Strict scoring (raw output) and lenient scoring (after answer extraction), which separates "wrong format" from "wrong answer".</li>
+            <li>Bootstrap 95% confidence intervals, with n shown next to every number.</li>
+            <li>JSON results plus Markdown and HTML leaderboards with a per-dialect breakdown.</li>
+            <li>Hand-made illustrative items, 25 per dialect for the dialect tasks, all clearly labelled as not an official benchmark, with Gulf and Sudanese items flagged for native review.</li>
+            <li>79 automated tests, about 78% coverage, and GitHub Actions CI.</li>
+          </ul>
+          <!-- Qwen2-0.5B illustrative findings omitted until native review. Do not add them as a benchmark result. -->
+          <h4>My role</h4>
+          <p class="measure">Designed the scope, tasks and metrics and wrote the evaluation briefs. Built it iteratively with a Cursor cloud agent, and I'm reviewing the Gulf and Sudanese items as a native Arabic speaker.</p>
+          <h4>Status</h4>
+          <p class="measure">Private repo, being prepared for public release. The lenient re-run on the expanded set and my native-speaker review are still pending.</p>
+        </article>
+
+        <div class="earlier">
+          <h3>Smaller and earlier projects</h3>
+          <ul class="earlier-list">
+            <li>
+              <h4>LLM-based SQL agent</h4>
+              <p class="measure">At Zain Sudan. Lets business users query databases in natural language. This was employer work, so it's described without a link or screenshots.</p>
+            </li>
+            <li>
+              <h4><a href="https://github.com/abdalraheemmokhtar/Podcast-helper-with-OpenAI" target="_blank" rel="noopener noreferrer">Podcast Helper<span class="sr-only"> (opens in a new tab)</span></a></h4>
+              <p class="measure">A Python and OpenAI web app that summarizes podcast episodes and pulls out highlights (2023).</p>
+            </li>
+            <li>
+              <h4><a href="https://github.com/abdalraheemmokhtar/RDBMDS" target="_blank" rel="noopener noreferrer">RDBMDS<span class="sr-only"> (opens in a new tab)</span></a></h4>
+              <p class="measure">A database management system built from scratch in C, to learn storage and query fundamentals.</p>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="hero-card" aria-label="Current focus">
-        <div class="orb"></div>
-        <div class="card-label">CURRENT FOCUS</div>
-        <strong>AI products<br>with a human edge.</strong>
-        <div class="card-footer"><span>Abu Dhabi, UAE</span><span>01 / 03</span></div>
+    </section>
+
+    <section class="block shell" id="skills" aria-labelledby="skills-title">
+      <p class="index" aria-hidden="true">04</p>
+      <div>
+        <h2 id="skills-title">Skills</h2>
+        <div class="skill-groups">
+          <section class="skill-group" aria-labelledby="skill-ai">
+            <h3 id="skill-ai">Applied AI / LLMs</h3>
+            <ul>
+              <li>RAG pipelines</li>
+              <li>Agentic workflows</li>
+              <li>LLM SQL agents</li>
+              <li>LLM evaluation (rubric judging, chrF/BLEU, confidence intervals)</li>
+              <li>Prompt design for graders and tutors</li>
+              <li>Voice AI (TTS/STT)</li>
+              <li>Building with AI coding agents</li>
+            </ul>
+          </section>
+          <section class="skill-group" aria-labelledby="skill-ml">
+            <h3 id="skill-ml">Machine learning</h3>
+            <ul>
+              <li>PyTorch</li>
+              <li>Recommendation systems</li>
+              <li>Churn and segmentation</li>
+              <li>Forecasting</li>
+              <li>Real-time pricing and matching models</li>
+              <li>A/B testing and experimentation</li>
+            </ul>
+          </section>
+          <section class="skill-group" aria-labelledby="skill-data">
+            <h3 id="skill-data">Data and engineering</h3>
+            <!-- Restore "Cloudflare Workers / D1 / R2" when naming Cloudflare publicly is confirmed. -->
+            <ul>
+              <li>Python</li>
+              <li>Complex SQL</li>
+              <li>PySpark</li>
+              <li>Relational databases</li>
+              <li>MLOps</li>
+              <li>CI/CD (Gitea, GitHub Actions)</li>
+              <li>TypeScript</li>
+            </ul>
+          </section>
+          <section class="skill-group" aria-labelledby="skill-bi">
+            <h3 id="skill-bi">BI and analytics</h3>
+            <!-- Power BI omitted until depth is confirmed. -->
+            <ul>
+              <li>KPI and dashboard design</li>
+              <li>Requirements gathering</li>
+              <li>Data storytelling for non-technical leaders</li>
+            </ul>
+          </section>
+          <!-- Cloud group omitted (AWS, Azure, GCP) until specific services are confirmed. -->
+          <section class="skill-group" aria-labelledby="skill-lang">
+            <h3 id="skill-lang">Languages</h3>
+            <ul>
+              <li>Arabic (native)</li>
+              <li>English (professional)</li>
+              <li>French (learning, targeting TCF Canada)</li>
+            </ul>
+          </section>
+        </div>
       </div>
     </section>
 
-    <section id="work" class="work shell">
-      <div class="section-heading"><p class="eyebrow"><i></i> Selected work</p><p class="muted">A few things I’ve built and explored.</p></div>
-      <div class="projects">
-        <a class="project featured" href="https://github.com/abdalraheemmokhtar/astra-french" target="_blank" rel="noreferrer">
-          <div class="project-top"><span class="tag">PRODUCT · AI</span><span class="arrow">↗</span></div>
-          <h2>Astra French</h2><p>An adaptive French-learning product built around persistent learner modelling, evidence-based mastery, speaking practice, and structured tutoring.</p><div class="project-meta"><span>Next.js</span><span>TypeScript</span><span>D1</span></div>
-        </a>
-        <a class="project" href="https://github.com/abdalraheemmokhtar/SchoolOfMath" target="_blank" rel="noreferrer">
-          <div class="project-top"><span class="tag">PRODUCT · EDUCATION</span><span class="arrow">↗</span></div>
-          <h2>School of Math</h2><p>A structured mathematics academy with interactive lessons, assessments, learner analytics, mastery tracking, and a guided tutor.</p><div class="project-meta"><span>React</span><span>TypeScript</span><span>D1</span></div>
-        </a>
-        <a class="project" href="https://github.com/abdalraheemmokhtar/Server_realms" target="_blank" rel="noreferrer">
-          <div class="project-top"><span class="tag">INTERACTIVE · GAME</span><span class="arrow">↗</span></div>
-          <h2>Server Realms</h2><p>An original browser roguelite with seven heroes, procedural combat, browser audio, local progression, and optional WebSocket co-op.</p><div class="project-meta"><span>Phaser</span><span>JavaScript</span><span>WebSockets</span></div>
-        </a>
-        <a class="project" href="https://github.com/abdalraheemmokhtar/Podcast-helper-with-OpenAI" target="_blank" rel="noreferrer">
-          <div class="project-top"><span class="tag">AI · CONTENT</span><span class="arrow">↗</span></div>
-          <h2>Podcast Helper</h2><p>An AI-assisted workflow that turns long-form podcast material into useful summaries, highlights, and notes.</p><div class="project-meta"><span>Python</span><span>OpenAI</span><span>Content</span></div>
-        </a>
-        <a class="project" href="https://github.com/abdalraheemmokhtar/RDBMDS" target="_blank" rel="noreferrer">
-          <div class="project-top"><span class="tag">ENGINEERING · SYSTEMS</span><span class="arrow">↗</span></div>
-          <h2>RDBMDS</h2><p>A database-management-system experiment built from first principles to understand storage, queries, and systems fundamentals.</p><div class="project-meta"><span>C</span><span>Databases</span></div>
-        </a>
+    <section class="block shell" id="education" aria-labelledby="education-title">
+      <p class="index" aria-hidden="true">05</p>
+      <div>
+        <h2 id="education-title">Education and certifications</h2>
+        <!-- Graduation year omitted. CGPA omitted. Issuers for the three 2022 certificates omitted. -->
+        <h3>BSc (Honours), Statistics &amp; Computer Science</h3>
+        <p>University of Khartoum.</p>
+        <h3>Certifications</h3>
+        <ul class="certs">
+          <li>Professional Data Scientist (DataCamp, 2023)</li>
+          <li>Associate Data Analyst (DataCamp, 2023)</li>
+          <li>Implementing AI Solutions in Business (2022)</li>
+          <li>Data Storytelling Concepts (2022)</li>
+          <li>Cloud Computing (2022)</li>
+          <li>AI Associate (Huawei, 2020)</li>
+        </ul>
       </div>
     </section>
 
-    <section id="about" class="about shell">
-      <p class="eyebrow"><i></i> A little about me</p>
-      <div class="about-grid"><h2>Curious by default.<br><span>Practical by design.</span></h2><div><p>I like turning complex ideas into clear, useful experiences — from data explorations and machine-learning experiments to full-stack web applications.</p><p>When I’m not building, I’m learning, writing down what I discover, and looking for the next problem worth solving.</p></div></div>
-      <div class="skills"><span>Data Science</span><span>Machine Learning</span><span>Web Development</span><span>Python</span><span>JavaScript</span><span>Product Thinking</span></div>
+    <section class="block shell" id="contact" aria-labelledby="contact-title">
+      <p class="index" aria-hidden="true">06</p>
+      <div>
+        <h2 id="contact-title">Let's talk</h2>
+        <p class="measure">I'm interested in roles where applied AI meets real users in Arabic-speaking markets: launching AI products in the UAE, the wider Gulf and Sudan, and designing AI solutions that hold up in dialect.</p>
+        <p class="contact-email"><a href="mailto:abdalraheemmokhtar@gmail.com">abdalraheemmokhtar@gmail.com</a></p>
+        <ul class="contact-links">
+          <li><a href="https://github.com/abdalraheemmokhtar" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in a new tab)</span></a></li>
+          <li><a href="https://www.linkedin.com/in/abdalraheem-mokhtar" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a></li>
+        </ul>
+        <p class="place">Abu Dhabi, UAE</p>
+      </div>
     </section>
   </main>
 
-  <footer class="footer shell"><span>© 2026 Abdalraheem Mokhtar</span><div><a href="mailto:abdalraheemmokhtar@gmail.com">Email</a><a href="https://github.com/abdalraheemmokhtar" target="_blank" rel="noreferrer">GitHub</a><a href="#top">Back to top ↑</a></div></footer>
+  <footer class="site-footer">
+    <div class="footer-inner shell">
+      <p>© 2026 Abdalraheem Mokhtar · Abu Dhabi, UAE</p>
+      <p><a href="#top">Back to top</a></p>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var button = document.getElementById("theme-toggle");
+      if (!button) return;
+      var root = document.documentElement;
+      function effective() {
+        var set = root.getAttribute("data-theme");
+        if (set === "light" || set === "dark") return set;
+        return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      function sync() {
+        var dark = effective() === "dark";
+        button.setAttribute("aria-pressed", dark ? "true" : "false");
+      }
+      sync();
+      button.addEventListener("click", function () {
+        var next = effective() === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try { localStorage.setItem("theme", next); } catch (err) {}
+        sync();
+      });
+    })();
+  </script>
 </body>
 </html>
