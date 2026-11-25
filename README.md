@@ -16,4 +16,8 @@ GitHub Pages serves this site at:
 
 `https://abdalraheemmokhtar.github.io/portfolio/`
 
-The site is the repository root (`index.html`, `style.css`, and `assets/`). Pages should publish the default branch (`master`) from `/`, with no Jekyll build (`.nojekyll` is included). A merge to `master` then updates that URL.
+The site is the repository root (`index.html`, `style.css`, and `assets/`). There is no build. `.nojekyll` is included so Pages serves the files as they are.
+
+Pages for this repository currently publishes the `gh-pages` branch. `.github/workflows/pages.yml` copies this root onto `gh-pages` after each push to `master`, which is what merging does. The public URL does not change.
+
+If that job cannot update `gh-pages`, set Settings, Pages, Deploy from a branch, to `master` and `/ (root)`.
